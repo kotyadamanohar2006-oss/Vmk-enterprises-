@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0f172a">
+  <title>VMK Enterprises | Madugula</title>
+  <meta name="description" content="VMK Enterprises - Madugula, Anakapalli District. Contact us for business enquiries.">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;color:#172033;background:#f7f8fc;line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1100px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:#0f172a;color:white;box-shadow:0 3px 15px #0002}
+    nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .logo{font-size:24px;font-weight:800;letter-spacing:.5px}
+    .logo span{color:#f59e0b}
+    .navlinks{display:flex;gap:22px;list-style:none}
+    .navlinks a{font-weight:600;color:#e5e7eb}
+    .navlinks a:hover{color:#f59e0b}
+    .menu{display:none;background:none;border:0;color:white;font-size:28px}
+    .hero{padding:85px 0;background:linear-gradient(135deg,#0f172a,#1e3a5f);color:white}
+    .hero-grid{display:grid;grid-template-columns:1.4fr 1fr;align-items:center;gap:45px}
+    .badge{display:inline-block;background:#f59e0b;color:#111827;padding:7px 13px;border-radius:30px;font-weight:700;margin-bottom:18px}
+    h1{font-size:clamp(40px,7vw,68px);line-height:1.05;margin-bottom:20px}
+    .hero p{font-size:18px;color:#dbe4f0;max-width:650px}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-block;padding:13px 20px;border-radius:10px;font-weight:700;border:2px solid transparent}
+    .primary{background:#f59e0b;color:#111827}
+    .secondary{border-color:#fff;color:#fff}
+    .hero-card{background:#ffffff12;border:1px solid #ffffff25;border-radius:20px;padding:28px;backdrop-filter:blur(8px)}
+    .hero-card h3{font-size:24px;margin-bottom:14px}
+    .hero-card p{margin:8px 0;font-size:15px}
+    section{padding:70px 0}
+    .section-title{text-align:center;margin-bottom:40px}
+    .section-title h2{font-size:34px;color:#0f172a}
+    .section-title p{color:#64748b;margin-top:8px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{background:white;padding:28px;border-radius:16px;box-shadow:0 8px 30px #0f172a0d;border:1px solid #e5e7eb}
+    .icon{font-size:35px;margin-bottom:12px}
+    .card h3{margin-bottom:8px}
+    .about{background:white}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+    .about-box{background:#f1f5f9;border-radius:18px;padding:30px}
+    .contact{background:#eef2ff}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+    .contact-card{background:white;padding:28px;border-radius:16px}
+    .contact-item{margin:16px 0}
+    .contact-item strong{display:block;color:#0f172a}
+    .contact-item a{color:#2563eb;font-weight:600}
+    footer{background:#0f172a;color:#cbd5e1;text-align:center;padding:25px}
+    footer strong{color:white}
+    @media(max-width:750px){
+      .menu{display:block}
+      .navlinks{display:none;position:absolute;top:68px;left:0;right:0;background:#0f172a;padding:15px 4%;flex-direction:column;gap:14px}
+      .navlinks.open{display:flex}
+      .hero{padding:60px 0}
+      .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+      .cards{grid-template-columns:1fr}
+      h1{font-size:46px}
+    }
+  </style>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="logo" href="#home">VMK <span>Enterprises</span></a>
+      <button class="menu" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+      <ul class="navlinks" id="navlinks">
+        <li><a href="#home" onclick="closeMenu()">Home</a></li>
+        <li><a href="#about" onclick="closeMenu()">About</a></li>
+        <li><a href="#products" onclick="closeMenu()">Products</a></li>
+        <li><a href="#services" onclick="closeMenu()">Services</a></li>
+        <li><a href="#products" onclick="closeMenu()">Products</a></li>
+        <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        <li><a href="#payment" onclick="closeMenu()">Payment</a></li>
+        <li><a href="#order" onclick="closeMenu()">Order Online</a></li>
+        <li><a href="#enquiry" onclick="closeMenu()">Enquiry</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <span class="badge">Welcome to VMK Enterprises</span>
+        <h1>Trusted Business.<br>Local Service.</h1>
+        <p>VMK Enterprises is based in Madugula, Anakapalli District. Contact us for business enquiries and service information.</p>
+        <div class="buttons">
+          <a class="btn primary" href="tel:+919652298198">📞 Call Now</a>
+          <a class="btn secondary" href="#order">🛒 Order Online</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h3>VMK Enterprises</h3>
+        <p>📍 Madugula Village, Madugula Mandalam</p>
+        <p>📍 Anakapalli District, Andhra Pradesh</p>
+        <p>📮 PIN: 531027</p>
+        <p>📧 kotyadamanohar2006@gmail.com</p>
+        <p>📱 9652298198</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div>
+        <div class="section-title" style="text-align:left;margin-bottom:18px">
+          <h2>About VMK Enterprises</h2>
+          <p>Your local business partner in Madugula.</p>
+        </div>
+        <p>We aim to provide dependable service and build long-term relationships with our customers. This website is designed to make it easy for customers to contact VMK Enterprises from any phone.</p>
+      </div>
+      <div class="about-box">
+        <h3>Why choose us?</h3>
+        <p>✓ Easy communication</p>
+        <p>✓ Local presence</p>
+        <p>✓ Customer-focused service</p>
+        <p>✓ Easy online ordering</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="products">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Products</h2>
+        <p>Turmeric finger products from VMK Enterprises.</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="icon">🌿</div>
+          <h3>Turmeric Finger – Fully Polished</h3>
+          <p>Premium fully polished turmeric finger.</p>
+          <p style="font-size:22px;font-weight:800;margin-top:12px">₹180</p>
+          <a class="btn primary" style="margin-top:15px" href="#order">🛒 Order Now</a>
+        </div>
+        <div class="card">
+          <div class="icon">🌿</div>
+          <h3>Turmeric Finger – Unpolished</h3>
+          <p>Natural unpolished turmeric finger.</p>
+          <p style="font-size:22px;font-weight:800;margin-top:12px">₹165</p>
+          <a class="btn primary" style="margin-top:15px" href="#order">🛒 Order Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Services</h2>
+        <p>Add or edit these services to match your actual business.</p>
+      </div>
+      <div class="cards">
+        <div class="card"><div class="icon">🤝</div><h3>Business Enquiries</h3><p>Contact us to discuss your requirements and available services.</p></div>
+        <div class="card"><div class="icon">📞</div><h3>Customer Support</h3><p>Call us for quick information and assistance.</p></div>
+        <div class="card"><div class="icon">⭐</div><h3>Reliable Service</h3><p>We focus on clear communication and dependable customer service.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="products">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Products</h2>
+        <p>Quality turmeric fingers available from VMK Enterprises.</p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <img src="turmeric_polished.jpg" alt="Turmeric Finger - Polished"
+               style="width:100%;height:230px;object-fit:cover;border-radius:12px;margin-bottom:16px">
+          <h3>Turmeric Finger – Polished</h3>
+          <p style="font-size:22px;font-weight:800;color:#d97706;margin:8px 0">₹180</p>
+          <p>Polished turmeric fingers. Contact us for quantity, availability and current price.</p>
+          <div class="buttons" style="margin-top:16px">
+            <a class="btn primary" href="#order">🛒 Order Now</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="turmeric_unpolished.jpg" alt="Turmeric Finger - Unpolished"
+               style="width:100%;height:230px;object-fit:cover;border-radius:12px;margin-bottom:16px">
+          <h3>Turmeric Finger – Unpolished</h3>
+          <p style="font-size:22px;font-weight:800;color:#d97706;margin:8px 0">₹165</p>
+          <p>Unpolished turmeric fingers. Contact us for quantity, availability and current price.</p>
+          <div class="buttons" style="margin-top:16px">
+            <a class="btn primary" href="#order">🛒 Order Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:28px;background:white;padding:14px;border-radius:18px;box-shadow:0 8px 30px #0f172a0d">
+        <img src="turmeric_banner.jpg" alt="Turmeric fingers at VMK Enterprises"
+             style="width:100%;height:300px;object-fit:cover;border-radius:12px">
+      </div>
+    </div>
+  </section>
+
+  <section id="payment">
+    <div class="container">
+      <div class="section-title">
+        <h2>UPI Payment</h2>
+        <p>Pay VMK Enterprises securely using any UPI app.</p>
+      </div>
+      <div class="contact-card" style="max-width:700px;margin:auto;text-align:center">
+        <p><strong>UPI ID:</strong> 9652298198-5@ibl</p>
+        <a class="btn primary" href="upi://pay?pa=9652298198-5@ibl&pn=VMK%20Enterprises&cu=INR">
+          💳 Pay with UPI
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="enquiry">
+    <div class="container">
+      <div class="section-title">
+        <h2>Customer Enquiry</h2>
+        <p>Have a question before ordering? Send us your enquiry.</p>
+      </div>
+      <div class="contact-card" style="max-width:700px;margin:auto">
+        <form onsubmit="sendEnquiryMessage(event)">
+          <label style="display:block;font-weight:700;margin:12px 0 6px">Name</label>
+          <input id="enquiryName" required placeholder="Your name"
+            style="width:100%;padding:13px;border:1px solid #cbd5e1;border-radius:10px;font-size:16px">
+
+          <label style="display:block;font-weight:700;margin:16px 0 6px">Phone Number</label>
+          <input id="enquiryPhone" required type="tel" placeholder="Your phone number"
+            style="width:100%;padding:13px;border:1px solid #cbd5e1;border-radius:10px;font-size:16px">
+
+          <label style="display:block;font-weight:700;margin:16px 0 6px">Your Enquiry</label>
+          <textarea id="enquiryMessage" required rows="5" placeholder="Write your question here..."
+            style="width:100%;padding:13px;border:1px solid #cbd5e1;border-radius:10px;font-size:16px;resize:vertical"></textarea>
+
+          <button class="btn primary" type="submit" style="margin-top:20px;width:100%;font-size:17px">
+            💬 Send Enquiry
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="order">
+    <div class="container">
+      <div class="section-title">
+        <h2>Order Online</h2>
+        <p>Place your turmeric order directly from the website.</p>
+      </div>
+
+      <div class="contact-card" style="max-width:760px;margin:auto">
+        <form action="https://formsubmit.co/kotyadamanohar2006@gmail.com" method="POST" onsubmit="prepareOrder(event)">
+          <input type="hidden" name="_subject" value="New VMK Enterprises Website Order">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="Order ID" id="orderId">
+          <input type="hidden" name="Order Total" id="orderTotal">
+
+          <label style="display:block;font-weight:700;margin:12px 0 6px">Customer Name</label>
+          <input name="Customer Name" id="customerName" required placeholder="Your full name"
+            style="width:100%;padding:13px;border:1px solid #cbd5e1;border-radius:10px;font-size:16px">
+
+          <label style="display:block;font-weight:700;margin:16px 0 6px">Phone Number</label>
+          <input name="Phone Number" id="customerPhone" required type="tel" placeholder="Your phone number"
+            style="width:100%;padding:13px;border:1px solid #cbd5e1;border-radius:10px;font-size:16px">
+
+          <label style="display:block;font-weight:700;margin:16px 0 6px">Delivery Address</label>
+          <textarea name="Delivery Address" id="address" required rows="3" placeholder="Full delivery address"
+            style="width:100%;padding:13px;border:1px solid #cbd5e1;border-radius:10px;font-size:16px;resize:vertical"></textarea>
+
+          <label style="display:block;font-weight:700;margin:16px 0 6px">Product</label>
+          <select name="Product" id="product" required onchange="updateTotal()"
+            style="width:100%;padding:13px;border:1px solid #cbd5e1;border-radius:10px;font-size:16px;background:white">
+            <option value="" data-price="0">Select a product</option>
+            <option value="Turmeric Finger - Polished" data-price="180">Turmeric Finger - Polished — ₹180</option>
+            <option value="Turmeric Finger - Unpolished" data-price="165">Turmeric Finger - Unpolished — ₹165</option>
+          </select>
+
+          <label style="display:block;font-weight:700;margin:16px 0 6px">Quantity</label>
+          <input name="Quantity" id="quantity" required type="number" min="1" value="1" onchange="updateTotal()" oninput="updateTotal()"
+            style="width:100%;padding:13px;border:1px solid #cbd5e1;border-radius:10px;font-size:16px">
+
+          <div style="margin-top:20px;padding:18px;background:#f8fafc;border-radius:12px">
+            <p style="font-size:18px"><strong>Order Total: ₹<span id="totalAmount">0</span></strong></p>
+            <p style="font-size:16px;margin-top:8px"><strong>30% Advance: ₹<span id="advanceAmount">0</span></strong></p>
+            <p style="font-size:16px;margin-top:5px"><strong>Balance on Delivery: ₹<span id="balanceAmount">0</span></strong></p>
+            <p style="font-size:14px;color:#64748b;margin-top:8px">
+              For Cash on Delivery, 30% of the order total is payable in advance. The remaining 70% is payable at delivery.
+            </p>
+          </div>
+
+          <label style="display:block;font-weight:700;margin:16px 0 6px">Payment Method</label>
+          <select name="Payment Method" id="paymentMethod" required
+            style="width:100%;padding:13px;border:1px solid #cbd5e1;border-radius:10px;font-size:16px;background:white">
+            <option value="">Select payment method</option>
+            <option value="Razorpay">Razorpay — Card / UPI</option>
+            <option value="WhatsApp">WhatsApp Order</option>
+            <option value="COD_30_ADVANCE">Cash on Delivery — 30% Advance</option>
+          </select>
+
+          <p style="margin-top:14px;font-size:14px;color:#475569">
+            UPI ID: <strong>9652298198-5@ibl</strong><br>
+            <strong>COD orders require the 30% advance to be paid by UPI.</strong>
+          </p>
+
+          <button class="btn primary" type="submit" style="margin-top:20px;width:100%;font-size:17px">
+            🛒 Place Order
+          </button>
+          <p style="margin-top:12px;font-size:13px;color:#64748b">
+            COD: 30% advance is required before dispatch; the remaining 70% is payable on delivery.
+          </p>
+
+          
+
+          <button class="btn primary" type="button" onclick="sendOrderToWhatsApp()" style="margin-top:12px;width:100%;font-size:17px">
+            💬 Order via WhatsApp
+          </button>
+
+          <button class="btn secondary" type="button" onclick="startRazorpayPayment()" style="margin-top:12px;width:100%;font-size:17px">
+            💳 Pay securely with Razorpay (Card / UPI)
+          </button>
+          <p style="margin-top:10px;font-size:13px;color:#64748b">
+            Razorpay payment requires a secure server-side order endpoint before live payments can be accepted.
+          </p>
+
+          <p id="orderNote" style="display:none;margin-top:15px;padding:12px;border-radius:10px;background:#ecfdf5;color:#166534">
+            Your order is being submitted. Please complete UPI payment if you selected UPI.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact Us</h2>
+        <p>We are ready to hear from you.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-item"><strong>📱 Phone</strong><a href="tel:+919652298198">9652298198</a></div>
+          <div class="contact-item"><strong>📧 Email</strong><a href="mailto:kotyadamanohar2006@gmail.com">kotyadamanohar2006@gmail.com</a></div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-item"><strong>📍 Address</strong><span>Madugula Village, Madugula Mandalam,<br>Anakapalli District, Andhra Pradesh<br>PIN 531027</span></div>
+          <a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=Madugula%2C%20Anakapalli%2C%20Andhra%20Pradesh%20531027" target="_blank">📍 Open in Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> <strong>VMK Enterprises</strong>. All rights reserved.</p>
+</footer>
+
+<script>
+  function toggleMenu(){document.getElementById('navlinks').classList.toggle('open')}
+  function closeMenu(){document.getElementById('navlinks').classList.remove('open')}
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+
+  function sendOrderToWhatsApp() {
+    const product = document.getElementById('product');
+    const quantity = Math.max(1, parseInt(document.getElementById('quantity').value || '1', 10));
+    const option = product.options[product.selectedIndex];
+    const price = Number(option && option.dataset.price ? option.dataset.price : 0);
+    const name = document.getElementById('customerName').value.trim();
+    const phone = document.getElementById('customerPhone').value.trim();
+    const address = document.getElementById('address').value.trim();
+
+    if (!price || !name || !phone || !address) {
+      alert('Please complete your name, phone, address, product and quantity first.');
+      return;
+    }
+
+    const total = price * quantity;
+    const advance = Math.round(total * 0.30);
+    const balance = total - advance;
+    const paymentMethod = document.getElementById('paymentMethod').value;
+    const paymentText = paymentMethod === 'COD_30_ADVANCE'
+      ? 'Cash on Delivery — 30% advance required'
+      : paymentMethod;
+    const text =
+      'Hello VMK Enterprises,%0A%0A' +
+      'I want to place an order.%0A' +
+      'Name: ' + encodeURIComponent(name) + '%0A' +
+      'Phone: ' + encodeURIComponent(phone) + '%0A' +
+      'Product: ' + encodeURIComponent(product.value) + '%0A' +
+      'Quantity: ' + encodeURIComponent(quantity) + '%0A' +
+      'Total: ₹' + encodeURIComponent(total.toLocaleString('en-IN')) + '%0A' +
+      'Payment: ' + encodeURIComponent(paymentText) + '%0A' +
+      '30% Advance: ₹' + encodeURIComponent(advance.toLocaleString('en-IN')) + '%0A' +
+      'Balance on Delivery: ₹' + encodeURIComponent(balance.toLocaleString('en-IN')) + '%0A' +
+      'Delivery Address: ' + encodeURIComponent(address);
+
+    window.open('https://wa.me/919652298198?text=' + text, '_blank');
+  }
+
+  async function startRazorpayPayment() {
+    const product = document.getElementById('product');
+    const quantity = Math.max(1, parseInt(document.getElementById('quantity').value || '1', 10));
+    const option = product.options[product.selectedIndex];
+    const price = Number(option && option.dataset.price ? option.dataset.price : 0);
+    const name = document.getElementById('customerName').value.trim();
+    const phone = document.getElementById('customerPhone').value.trim();
+    const address = document.getElementById('address').value.trim();
+
+    if (!price || !name || !phone || !address) {
+      alert('Please complete your name, phone, address, product and quantity first.');
+      return;
+    }
+
+    const total = price * quantity;
+    const paymentMethod = document.getElementById('paymentMethod').value;
+    const amount = paymentMethod === 'COD_30_ADVANCE' ? Math.round(total * 0.30) : total;
+
+    // SECURITY: Do not put a Razorpay Key Secret in this file.
+    // Replace /api/create-order with your secure backend endpoint.
+    try {
+      const response = await fetch('/api/create-order', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+          amount: amount,
+          currency: 'INR',
+          product: product.value,
+          quantity: quantity,
+          customer_name: name,
+          customer_phone: phone,
+          delivery_address: address
+        })
+      });
+
+      if (!response.ok) throw new Error('Payment server is not configured yet.');
+      const order = await response.json();
+
+      const options = {
+        key: 'REPLACE_WITH_RAZORPAY_KEY_ID',
+        amount: order.amount,
+        currency: order.currency || 'INR',
+        name: 'VMK Enterprises',
+        description: (paymentMethod === 'COD_30_ADVANCE' ? '30% advance for COD - ' : '') + product.value + ' x ' + quantity,
+        order_id: order.id,
+        prefill: {name: name, contact: phone},
+        theme: {color: '#2e7d32'},
+        handler: function (payment) {
+          document.getElementById('orderNote').style.display = 'block';
+          document.getElementById('orderNote').textContent =
+            'Payment received. Payment ID: ' + payment.razorpay_payment_id;
+        }
+      };
+
+      const rzp = new Razorpay(options);
+      rzp.open();
+    } catch (error) {
+      alert('Razorpay is not connected yet. The website needs a secure payment backend and your Razorpay Key ID.');
+    }
+  }
+
+
+  function sendEnquiryMessage(event) {
+    event.preventDefault();
+    const name = document.getElementById('enquiryName').value.trim();
+    const phone = document.getElementById('enquiryPhone').value.trim();
+    const message = document.getElementById('enquiryMessage').value.trim();
+
+    const text =
+      'Hello VMK Enterprises,%0A%0A' +
+      'Customer Enquiry%0A' +
+      'Name: ' + encodeURIComponent(name) + '%0A' +
+      'Phone: ' + encodeURIComponent(phone) + '%0A' +
+      'Enquiry: ' + encodeURIComponent(message);
+
+    window.open('https://wa.me/919652298198?text=' + text, '_blank');
+  }
+
+  function updateTotal() {
+    const product = document.getElementById('product');
+    const quantity = Math.max(1, parseInt(document.getElementById('quantity').value || '1', 10));
+    const option = product.options[product.selectedIndex];
+    const price = Number(option && option.dataset.price ? option.dataset.price : 0);
+    const total = price * quantity;
+    const advance = Math.round(total * 0.30);
+    const balance = total - advance;
+    document.getElementById('totalAmount').textContent = total.toLocaleString('en-IN');
+    document.getElementById('advanceAmount').textContent = advance.toLocaleString('en-IN');
+    document.getElementById('balanceAmount').textContent = balance.toLocaleString('en-IN');
+  }
+
+  function prepareOrder(event) {
+    const product = document.getElementById('product');
+    const quantity = Math.max(1, parseInt(document.getElementById('quantity').value || '1', 10));
+    const option = product.options[product.selectedIndex];
+    const price = Number(option && option.dataset.price ? option.dataset.price : 0);
+    const total = price * quantity;
+
+    if (!price) {
+      event.preventDefault();
+      alert('Please select a product.');
+      return;
+    }
+
+    const orderId = 'VMK-' + Date.now().toString().slice(-8);
+    document.getElementById('orderId').value = orderId;
+    document.getElementById('orderTotal').value = '₹' + total.toLocaleString('en-IN') + (document.getElementById('paymentMethod').value === 'COD_30_ADVANCE' ? ' (30% advance: ₹' + Math.round(total * 0.30).toLocaleString('en-IN') + '; balance on delivery: ₹' + (total - Math.round(total * 0.30)).toLocaleString('en-IN') + ')' : '');
+    document.getElementById('orderNote').style.display = 'block';
+  }
+
+  updateTotal();
+
+
+</script>
+</body>
+</html>
